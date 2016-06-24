@@ -1,7 +1,7 @@
 #ifndef IMAGE_LOADER_H
 #define	IMAGE_LOADER_H
 
-#include <FreeImage.h>
+#include <FreeImage/FreeImage.h>
 
 void set_glTexImage2D_from_file(char *filename) {
 	FREE_IMAGE_FORMAT tx_file_format;

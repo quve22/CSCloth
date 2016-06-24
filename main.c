@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 #include <GL/glew.h>
 #include <GL/freeglut.h>
 
+
 #include "interaction.h"
 #include "ImageLoader.h"
+
+#ifndef INT_MAX
+#define INT_MAX (int)1e9
+#endif
 
 #define N_MESSAGE_LINES 1
 
@@ -54,7 +60,7 @@ void prepare_shader_program()
 
 }
 
-// °¢Á¾ ¿ÀºêÁ§Æ®µéÀ» »ı¼º.
+// âˆÂ¢Â¡Ã¦ Ã¸Â¿âˆ«ÃÂ¡ÃŸâˆ†Ã†ÂµÃˆÂ¿Âª ÂªËÂºâˆ«.
 void prepare_scene(void) 
 {
 	set_up_scene_lights();	
@@ -63,13 +69,13 @@ void prepare_scene(void)
 
 ///////////////////// initialization /////////////////////
 
-// lightµéÀÇ ½ÇÁ¦ °ªµéÀ» ¼³Á¤ ¹× uniformÀ¸·Î ³Ñ°ÜÁÜ.
+// lightÂµÃˆÂ¿Â« Î©Â«Â¡Â¶ âˆâ„¢ÂµÃˆÂ¿Âª Âºâ‰¥Â¡Â§ Ï€â—Š uniformÂ¿âˆâˆ‘Å’ â‰¥â€”âˆâ€¹Â¡â€¹.
 void set_up_scene_lights(void) 
 {
 
 }
 
-// OpenGL conventionsÀ» ÁØ¼öÇÏ´Â ¹æ½ÄÀ¸·Î ÃÊ±âÈ­.
+// OpenGL conventionsÂ¿Âª Â¡Ã¿ÂºË†Â«Å“Â¥Â¬ Ï€ÃŠÎ©Æ’Â¿âˆâˆ‘Å’ âˆšÂ Â±â€šÂ»â‰ .
 void initialize_lights_and_material(void) 
 {
 
